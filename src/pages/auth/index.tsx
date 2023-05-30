@@ -12,7 +12,7 @@ interface Props {
     
 }
 
-function index({}: Props): ReactElement | null {
+function Index({}: Props): ReactElement | null {
 
   	const authModal = useRecoilValue(authModalState);
     const [user, loading, error] = useAuthState(auth);
@@ -39,4 +39,4 @@ function index({}: Props): ReactElement | null {
     );
 }
 
-export default index
+export default Index
